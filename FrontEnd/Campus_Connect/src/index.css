@@ -1,0 +1,326 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.outfit-font {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.outfit-font-lighter {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.bg-gradient-blue {
+  background: linear-gradient(
+    to left,
+    #416f98c7,
+    oklab(28.622999999999998% 0.00524 -0.09815 / 0.801)
+  );
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.logo {
+  max-height: 50px;
+  border-radius: 50px;
+}
+.nav-img {
+  height: 100vh;
+  object-fit: cover;
+}
+.navbar-brand {
+  font-size: x-large;
+}
+
+.logo {
+  max-width: 150px;
+  width: 100%;
+  max-height: 50px;
+  border-radius: 50px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.student-dashboard-nav {
+  padding: 10px 150px 10px 150px;
+}
+.btn-container {
+  border: 2px solid black;
+  width: 50%;
+}
+.status {
+  display: flex;
+  flex-direction: row;
+}
+.hod-complaint-table {
+  width: 80%;
+}
+.student-complaint-table {
+  width: 82%;
+}
+@media (max-width: 425px) {
+  .hod-complaint-table {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .logo {
+    max-width: 100px;
+  }
+  .student-dashboard-nav {
+    padding: 10px 80px 10px 80px;
+  }
+  .hod-complaint-table {
+    width: 100%;
+  }
+  .student-complaint-table {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    max-width: 40px;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  .navbar-brand {
+    font-size: large;
+  }
+  .portal-cards {
+    margin-left: 18px;
+    /* padding: 10px; */
+    width: 90vw;
+  }
+  .feature-cards {
+    margin-left: 2px;
+  }
+  .voice-card > div > button {
+    width: 50%;
+  }
+  .student-dashboard-nav {
+    padding: 10px 15px 10px 15px;
+  }
+  .logout-icon {
+    opacity: 0;
+  }
+  .status {
+    display: none;
+  }
+  .sa-block {
+    gap: 0;
+  }
+  .hod-complaint-table {
+    width: 100%;
+  }
+}
+
+.voice-card > div > button {
+  width: 25%;
+}
+.voice-card > div {
+  max-height: 0%;
+}
+.featured-cards {
+  height: 34vh;
+}
+.btn-animated {
+  color: #fff;
+  background: linear-gradient(to right, #5e84a5c7 30%, #f5f5f6 50%, #147ebb);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  border: none;
+  padding: 16px;
+}
+.btn-animated:hover,
+.btn-animated:focus {
+  background-position: left bottom;
+  color: #ffffff;
+}
+
+.card-shadow {
+  border: none;
+  filter: drop-shadow(4px 4px 10px rgba(174, 174, 174, 0.5));
+}
+.icons {
+  font-size: 60px;
+  color: #147ebbd8;
+}
+.dashboard-icons {
+  font-size: 40px;
+  margin-right: 20px;
+}
+.portal-cards {
+  height: 380px;
+}
+.portal-cards button {
+  margin-top: 50px;
+}
+.card-body {
+  margin-top: 90px;
+}
+.bg-gradient-orange {
+  background: linear-gradient(to left, #eeaf29, oklab(74.419% 0.1001 0.15095));
+}
+.orange {
+  color: oklab(74.419% 0.1001 0.15095);
+}
+.bg-gradient-violet {
+  background: linear-gradient(
+    to left,
+    #b681bde6,
+    oklab(60.29600000000001% 0.21611 -0.19833)
+  );
+}
+.violet {
+  color: #b681bd;
+}
+.bg-gradient-pink {
+  background: linear-gradient(
+    to left,
+    #ba589a,
+    oklab(63.656% 0.26127 -0.07621)
+  );
+}
+.pink {
+  color: oklab(63.656% 0.26127 -0.07621);
+}
+
+.voice-card > div {
+  border-radius: 15px;
+}
+.footer-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+}
+.container-login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.card-dark {
+  width: 24rem;
+  padding: 40px;
+  border-radius: 30px;
+  border: linear-gradient(to right, #000000c7 100%, #f5f5f6 50%, #00a2ff);
+  box-shadow: 5px 5px 2px 1px rgba(224, 209, 209, 0.4);
+}
+
+.btn-register {
+  /* background-color: rgba(153, 255, 0, 0.851); */
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+input {
+  border: 2px solid rgb(145, 145, 180);
+  border-radius: 10px;
+  padding: 10px 0px 8px 10px;
+  background-color: rgb(253, 253, 253);
+  color: black;
+}
+input:focus {
+  outline: none;
+}
+.eye {
+  right: 8px;
+  color: rgba(65, 89, 185, 0.901);
+  top: 15px;
+  font-size: small;
+  cursor: pointer;
+}
+.portal-cards,
+.card,
+.welcome {
+  opacity: 0;
+  transform: translateY(150px);
+  animation: cardEnter 0.8s ease-out forwards;
+}
+
+@keyframes cardEnter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard-cards {
+  border: none;
+  filter: drop-shadow(4px 4px 5px rgba(174, 174, 174, 0.5));
+  color: black;
+}
+
+.border-left {
+  border-left: 6px solid #1382c2;
+}
+.btn-add-complaint {
+  background-color: rgb(84, 154, 200);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 0 10px 0;
+  border-radius: 10px;
+}
+.complaints-header {
+  border-radius: 10px 10px 0px 0px;
+  width: 90%;
+}
+.complaints {
+  width: 90%;
+}
+.c-title {
+  font-size: 19px;
+}
+.sa-block {
+  gap: 4rem;
+}
+.modal {
+  transition: transform(ease-out);
+}
+
+.admin-bg {
+  border-bottom: 2px solid #147ebb;
+  color: #147ebb;
+}
+.admin-nav {
+  color: black;
+}
+.admin-nav:hover {
+  color: #147ebb;
+}
+.border-down {
+  border-bottom: 2px solid #147ebb;
+}
+
+.status-modal-icon {
+  font-size: 60px;
+}
+.btn-red {
+  color: rgba(255, 0, 0, 0.752);
+}
+.font-small {
+  font-size: 14px;
+}
+option:hover{
+  background-color: red;
+  border: 2px solid black;
+  cursor: pointer;
+}
