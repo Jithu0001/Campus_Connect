@@ -1,25 +1,41 @@
 {
   "name": "backend",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest --runInBand"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.13.2",
+    "axios": "^1.21.0",
     "bcrypt": "^6.0.0",
+    "cloudinary": "^2.11.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.0.2",
+    "multer": "^2.1.1",
     "node-cron": "^4.2.1",
-    "nodemon": "^3.1.11",
-    "router": "^2.2.0",
-    "sentiment": "^5.0.2"
+    "nodemailer": "^10.3.1",
+    "sentiment": "^5.0.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.3.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFiles": [
+      "./tests/setup-env.js"
+    ]
   }
 }
